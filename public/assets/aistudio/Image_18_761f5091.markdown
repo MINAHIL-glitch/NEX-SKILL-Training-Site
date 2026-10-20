@@ -1,0 +1,202 @@
+---
+name: Nexskill Tech Matrix
+colors:
+  surface: '#0d1322'
+  surface-dim: '#0d1322'
+  surface-bright: '#33394a'
+  surface-container-lowest: '#080e1d'
+  surface-container-low: '#151b2b'
+  surface-container: '#191f2f'
+  surface-container-high: '#242a3a'
+  surface-container-highest: '#2f3445'
+  on-surface: '#dde2f8'
+  on-surface-variant: '#b9cacb'
+  inverse-surface: '#dde2f8'
+  inverse-on-surface: '#2a3040'
+  outline: '#849495'
+  outline-variant: '#3b494b'
+  surface-tint: '#00dbe9'
+  primary: '#dbfcff'
+  on-primary: '#00363a'
+  primary-container: '#00f0ff'
+  on-primary-container: '#006970'
+  inverse-primary: '#006970'
+  secondary: '#adc6ff'
+  on-secondary: '#002e6a'
+  secondary-container: '#0566d9'
+  on-secondary-container: '#e6ecff'
+  tertiary: '#fff3f2'
+  on-tertiary: '#68000a'
+  tertiary-container: '#ffceca'
+  on-tertiary-container: '#ba1b24'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#7df4ff'
+  primary-fixed-dim: '#00dbe9'
+  on-primary-fixed: '#002022'
+  on-primary-fixed-variant: '#004f54'
+  secondary-fixed: '#d8e2ff'
+  secondary-fixed-dim: '#adc6ff'
+  on-secondary-fixed: '#001a42'
+  on-secondary-fixed-variant: '#004395'
+  tertiary-fixed: '#ffdad7'
+  tertiary-fixed-dim: '#ffb3ad'
+  on-tertiary-fixed: '#410004'
+  on-tertiary-fixed-variant: '#930013'
+  background: '#0d1322'
+  on-background: '#dde2f8'
+  surface-variant: '#2f3445'
+  surface-base: '#070c18'
+  surface-card: '#0f172a'
+  surface-glass: rgba(15, 23, 42, 0.72)
+  surface-glass-border: rgba(56, 189, 248, 0.16)
+  accent-cyan-glow: rgba(0, 240, 255, 0.28)
+  brand-crimson: '#e11d48'
+  text-primary: '#f8fafc'
+  text-muted: '#94a3b8'
+typography:
+  display-hero:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 56px
+    fontWeight: '800'
+    lineHeight: 64px
+    letterSpacing: -0.03em
+  display-hero-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 36px
+    fontWeight: '800'
+    lineHeight: 44px
+    letterSpacing: -0.02em
+  headline-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 36px
+    fontWeight: '700'
+    lineHeight: 44px
+    letterSpacing: -0.02em
+  headline-lg-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 28px
+    fontWeight: '700'
+    lineHeight: 36px
+    letterSpacing: -0.015em
+  headline-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 24px
+    fontWeight: '600'
+    lineHeight: 32px
+    letterSpacing: -0.01em
+  title-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 26px
+  body-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 26px
+  body-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 22px
+  label-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 12px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.06em
+  label-badge:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 11px
+    fontWeight: '700'
+    lineHeight: 14px
+    letterSpacing: 0.08em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1.5rem
+  gutter-mobile: 1rem
+  margin: 3rem
+  margin-mobile: 1.25rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+---
+
+## Brand & Style
+
+This design system establishes a premium, future-forward technical education presence tailored for career switchers, aspiring developers, and tech professionals across emerging tech hubs. Combining high-octane cyber aesthetics with rigorous academic credibility, the interface moves past chaotic institutional layouts toward a streamlined, hyper-focused experience.
+
+The visual style blends **Dark Mode Glassmorphism** with **Technical Precision Minimalist accents**. Deep oceanic obsidian backdrops create infinite depth, punctuated by electric cyan beam lines, glowing states, and sleek translucent surfaces. The emotional atmosphere projects mastery, industry readiness, speed, and high competence.
+
+## Colors
+
+The color palette centers on a rich, space-grade obsidian canvas (`#0b1120` base, sinking to `#070c18` background wells) contrasted against an electric tech spectrum:
+
+- **Primary (`#00f0ff` Cyan Glow):** Used for focal CTAs, vital telemetry metrics, active states, and progressive completion indicators.
+- **Secondary (`#3b82f6` Cobalt Tech):** Structures structural framing, interactive link transitions, focus rings, and secondary indicators.
+- **Tertiary (`#ef4444` Crimson Alert):** Reserved for live batches, urgency chips, urgent admission deadlines, and critical status flags.
+- **Neutral Layering:** Surface card containers utilize `#0f172a` with layered frosted glass (`rgba(15, 23, 42, 0.72)`), finished with hairline neon cyan-slate borders. Text renders in high-legibility `#f8fafc` for titles and `#94a3b8` for contextual metadata.
+
+## Typography
+
+The design system exclusively leverages **Plus Jakarta Sans** across all hierarchies to produce a razor-sharp modern tech look. Its geometric proportions and open apertures guarantee crystal clarity even in dense curriculum outlines and code modules.
+
+Display and hero headlines use tighter negative tracking (`-0.02em` to `-0.03em`) and heavy weights (`700` and `800`) to anchor landing views with high visual impact. Meta labels, course codes, and tech stack tags leverage uppercase styling with positive tracking (`0.06em` to `0.08em`) to enforce an engineered dashboard feel.
+
+## Layout & Spacing
+
+A balanced 12-column responsive fluid grid governs desktop displays (max-width `1320px`), collapsing into 6 columns on tablet devices (`768px - 1024px`) and a 4-column stack on mobile viewports (<`768px`).
+
+Grid margins maintain generous breathing room (`margin: 3rem` on desktop; `1.25rem` on mobile) ensuring elevated cards and glowing accents never clip viewport boundaries. Vertical cadence is dictated by an 8pt spatial baseline, using `space-md` (`1rem`) as the default gap between card content groupings and `space-xl` (`2.5rem`) between distinct interactive sections.
+
+## Elevation & Depth
+
+Visual hierarchy relies on three-tier glassmorphism fused with colored perimeter diffusion:
+
+- **Level 0 (Canvas Base):** Deep matte `#070c18` background, optionally populated by low-opacity cyan radial ambient lights (blur: `160px`, opacity: `12%`).
+- **Level 1 (Card & Section Enclosures):** Dark navy glass panels (`background: rgba(15, 23, 42, 0.72)`) backed by `backdrop-filter: blur(14px)`. Borders utilize a crisp `1px` translucent edge (`rgba(56, 189, 248, 0.16)`).
+- **Level 2 (Hover & Floating Elements):** Lifted cards translate `Y: -4px` with a layered cyan shadow (`0 14px 34px -8px rgba(0, 240, 255, 0.18)`), switching the border to full electric cyan illumination.
+- **Level 3 (Modals & Overlays):** Highly opaque navy containers (`rgba(11, 17, 32, 0.94)`) surrounded by a dual-ring glow: `0 0 0 1px rgba(0, 240, 255, 0.4)` and ambient drop shadow `0 24px 60px -12px rgba(0, 0, 0, 0.75)`.
+
+## Shapes
+
+The interface balances sharp technological precision with ergonomic rounded touchpoints, adopting **Scale 2 (Rounded)**. Standard cards, inputs, and primary containers use `0.5rem` (`8px`) radiuses. 
+
+Featured curriculum cards and hero visual containers apply `rounded-lg` (`1rem` / `16px`), while interactive badges, status capsules, and segmented pill tabs take full circular or `rounded-xl` (`1.5rem`) contours.
+
+## Components
+
+### Buttons
+- **Primary Cyber:** Solid `#00f0ff` fill with jet-black `#0b1120` bold text. Subtle neon cyan glow shadow (`0 0 20px rgba(0, 240, 255, 0.35)`). Active state applies a scale transform (`0.98`).
+- **Secondary Glass:** Background `rgba(30, 41, 59, 0.6)` with a `1px` border of `rgba(59, 130, 246, 0.4)` and `#f8fafc` text. Hover prompts an internal blue shimmer.
+- **Alert / Enroll Now:** High-energy crimson gradient (`#ef4444` to `#dc2626`) for rapid enrollment calls, flanked by a pulsating beacon dot.
+
+### Badges & Status Chips
+- Pill-shaped (`rounded-full`) with uppercase tracking (`letterSpacing: 0.08em`).
+- **Live / Admissions Open:** Background `rgba(239, 68, 68, 0.12)`, border `1px solid rgba(239, 68, 68, 0.4)`, text `#f87171`. Includes a pulsing red indicator dot.
+- **Tech Track (AI, Full-Stack, Cloud):** Cyan translucent fill `rgba(0, 240, 255, 0.1)` with crisp cyan border and `#00f0ff` text.
+
+### Cards & Program Containers
+- Frosted dark navy fill (`rgba(15, 23, 42, 0.72)`) with `1px` stroke `rgba(56, 189, 248, 0.14)`.
+- Internal structure: High-contrast header, track duration badge, mentor credentials preview, curriculum summary, and bottom-pinned "Apply for Batch" CTA.
+
+### Input Fields & Selects
+- Deep glass inputs (`background: rgba(11, 17, 32, 0.6)`) with `1px solid rgba(148, 163, 184, 0.2)` borders.
+- Focused state eliminates generic browser rings, engaging an electric cyan line (`#00f0ff`) paired with an ambient `0 0 12px rgba(0, 240, 255, 0.25)` outward glow. Floating labels render in `#94a3b8`.
+
+### Checkboxes & Radios
+- Custom dark slate squares and circles with `1.5px` border (`rgba(56, 189, 248, 0.35)`). Checked state fills with solid cyan `#00f0ff` and renders an obsidian `#070c18` checkmark.
+
+### Technical Metrics & Stat Tiles
+- Compact metric blocks featuring extra-bold Plus Jakarta Sans values (`36px`) rendered in gradient text (`#00f0ff` to `#3b82f6`), accompanied by compact muted uppercase descriptions (e.g., "98% JOB PLACEMENT", "35,000+ ALUMNI").

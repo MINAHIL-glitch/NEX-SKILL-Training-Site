@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-highest":"#2c344d","on-secondary":"#003642","surface-bright":"#313852","on-surface":"#dbe1ff","inverse-surface":"#dbe1ff","surface-container-lowest":"#050d25","secondary-fixed-dim":"#4cd6fb","inverse-on-surface":"#282f49","surface":"#0a122a","surface-container":"#171e37","on-secondary-fixed-variant":"#004e5f","on-tertiary-container":"#006879","surface-dim":"#0a122a","error-container":"#93000a","primary":"#dbfcff","primary-fixed":"#7df4ff","surface-container-high":"#212942","tertiary":"#e6f9ff","on-secondary-container":"#003f4e","on-tertiary":"#00363f","on-tertiary-fixed-variant":"#004e5b","error":"#ffb4ab","inverse-primary":"#006970","primary-container":"#00f0ff","on-error-container":"#ffdad6","background":"#0a122a","on-surface-variant":"#b9cacb","secondary-fixed":"#b3ebff","on-primary-container":"#006970","tertiary-fixed":"#a7edff","tertiary-container":"#83e8ff","on-background":"#dbe1ff","surface-tint":"#00dbe9","on-tertiary-fixed":"#001f25","surface-variant":"#2c344d","outline":"#849495","outline-variant":"#3b494b","secondary":"#4cd6fb","on-primary-fixed":"#002022","secondary-container":"#00b2d6","tertiary-fixed-dim":"#58d6f1","on-primary-fixed-variant":"#004f54","primary-fixed-dim":"#00dbe9","on-error":"#690005","on-secondary-fixed":"#001f27","on-primary":"#00363a","surface-container-low":"#131a33"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xl":"2.5rem","space-sm":"0.5rem","gutter-sm":"1rem","gutter":"1.5rem","margin":"2rem","space-xs":"0.25rem","space-md":"1rem","space-lg":"1.5rem","margin-mobile":"1rem"},fontFamily:{"label-code":["JetBrains Mono"],"body-sm":["Inter"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-xl":["Plus Jakarta Sans"],"body-lg":["Inter"],"label-badge":["JetBrains Mono"],"headline-md":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"label-code":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"500"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"label-badge":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.005em","fontWeight":"600"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.35)]"><div class="h-20 max-w-[1280px] mx-auto px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm" data-path="home" href="#"><img alt="Nexskill Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WPqFhlZSd5bFpqDtDHGPeIEri5QfFjNA4T_4JjLyjmcanKJL1i3dbkz5MlihBDyHy_Nefk5dhiYthX7v-35qyfmKzv-zZd5S0ZZx6Tz1hjrGm8sAwokxs_yHEBoROpgQL6ThL5_Np1VsqOvObJIlbY4xpATkXakCDoLZYzrKJt07-ZAewQMmf6xVLD37HRO26yo31vF4m2joL8kDyLECjPQ82JpNPP4UOfrv9HlyMJxrvNHauDx25jo3oy"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Nexskill</span></a><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-primary font-semibold rounded-lg shadow-[0_0_12px_rgba(0,240,255,0.2)]"><a class="px-space-md py-space-sm font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="home" href="#">Home</a><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-surface-container-high text-primary font-semibold rounded-lg shadow-[0_0_12px_rgba(0,240,255,0.2)]" data-path="courses-and-bootcamps" href="#">Courses &amp; Bootcamps</a><a class="px-space-md py-space-sm font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="admissions-and-placements" href="#">Admissions &amp; Placements</a><a class="px-space-md py-space-sm font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="student-portal" href="#">Student Portal</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center bg-surface-container-lowest px-space-md py-space-xs rounded-lg gap-space-sm focus-within:shadow-[0_0_12px_rgba(0,240,255,0.25)]"><span class="material-symbols-outlined text-on-surface-variant text-[18px]">search</span><input class="bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none w-44 lg:w-56" placeholder="Search curriculum, stacks..." type="text"/><kbd class="font-label-code text-label-code text-outline bg-surface-container px-space-xs py-0.5 rounded shadow-sm">⌘K</kbd></div><button class="relative p-space-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_#00f0ff]"></span></button><a class="hidden sm:inline-flex items-center justify-center font-body-sm text-body-sm font-semibold bg-primary-container text-on-primary hover:bg-primary-fixed-dim px-space-md py-space-sm rounded-lg shadow-[0_0_20px_rgba(0,240,255,0.35)] transition-all" data-path="book-free-demo" href="#">Book Free Demo</a><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary-container/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk-mpx2CcN_dTedoEeD6bI4P0n6D3E6P4BQQbX1WN7kzrrmIDJnzNhEUk_Gwycd8WdqV-iXxm0X2fhfCmuWEUyJ35n8IT373p382vmDWzeDfyivMgCskpU_d5VKX6ih1QSPqRRDBDn3EnbzBsxurXeHImS_mTun-fA69_Ryc8sUxYmUnSk5G8AdLTz0kR7X1G8xg4144leIom4qxzacecTycuts8qox-0NvaWMKhnBj--gMB0NaeOVaQ"/></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Top Ambient Glow Emitters -->
+<div class="relative w-full max-w-[1280px] mx-auto px-gutter overflow-hidden pointer-events-none">
+<div class="absolute -top-32 left-1/4 w-96 h-96 bg-primary-container/10 rounded-full blur-[128px]"></div>
+<div class="absolute -top-20 right-10 w-80 h-80 bg-secondary/10 rounded-full blur-[100px]"></div>
+</div>
+<!-- Hero / Catalog Header Section -->
+<section class="w-full max-w-[1280px] mx-auto px-gutter pt-space-lg pb-space-md">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-space-xs bg-surface-container-high px-space-md py-1 rounded-full shadow-[0_0_12px_rgba(0,240,255,0.15)] mb-space-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse shadow-[0_0_8px_#00f0ff]"></span>
+<span class="font-label-badge text-label-badge text-primary uppercase tracking-widest">Industry-Accredited Curriculum 2025</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary font-extrabold tracking-tight">
+          Accelerated Tech Bootcamps &amp; Professional Certifications
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs">
+          High-intensity, production-grade technical engineering tracks backed by real terminal sandboxes, live code reviews, and guaranteed hiring corridors.
+        </p>
+</div>
+<!-- Quick Metrics Counter Strip -->
+<div class="flex items-center gap-space-md bg-surface-container-low px-space-lg py-space-sm rounded-xl shadow-md">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary-container font-bold">94.8%</span>
+<span class="font-label-code text-label-code text-outline">180d Placement</span>
+</div>
+<div class="w-px h-8 bg-surface-container-highest"></div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">$118k</span>
+<span class="font-label-code text-label-code text-outline">Avg Grad Comp</span>
+</div>
+<div class="w-px h-8 bg-surface-container-highest"></div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold">420+</span>
+<span class="font-label-code text-label-code text-outline">Hiring Partners</span>
+</div>
+</div>
+</div>
+<!-- Filter Pills & Search/Sort Controller Bar -->
+<div class="mt-space-lg flex flex-col gap-space-md bg-surface-container-low p-space-md rounded-xl shadow-sm">
+<!-- Filter Chips -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1" id="filterPillsContainer">
+<button class="filter-pill active px-space-md py-space-xs rounded-full font-label-badge text-label-badge bg-primary-container text-on-primary font-bold shadow-[0_0_12px_rgba(0,240,255,0.35)] transition-all whitespace-nowrap" type="button">
+          All Programs
+        </button>
+<button class="filter-pill px-space-md py-space-xs rounded-full font-label-badge text-label-badge bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all whitespace-nowrap" type="button">
+          Software Engineering
+        </button>
+<button class="filter-pill px-space-md py-space-xs rounded-full font-label-badge text-label-badge bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all whitespace-nowrap" type="button">
+          AI &amp; Machine Learning
+        </button>
+<button class="filter-pill px-space-md py-space-xs rounded-full font-label-badge text-label-badge bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all whitespace-nowrap" type="button">
+          Cloud &amp; DevOps
+        </button>
+<button class="filter-pill px-space-md py-space-xs rounded-full font-label-badge text-label-badge bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all whitespace-nowrap" type="button">
+          Cybersecurity
+        </button>
+<button class="filter-pill px-space-md py-space-xs rounded-full font-label-badge text-label-badge bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all whitespace-nowrap" type="button">
+          UI/UX &amp; Product
+        </button>
+<button class="filter-pill px-space-md py-space-xs rounded-full font-label-badge text-label-badge bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all whitespace-nowrap" type="button">
+          Weekend Executive Tracks
+        </button>
+</div>
+<!-- Search & Controls Subbar -->
+<div class="flex flex-col md:flex-row items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-center w-full md:w-96 bg-surface px-space-md py-space-xs rounded-lg shadow-inner">
+<span class="material-symbols-outlined text-outline text-[20px] mr-space-sm">tune</span>
+<input class="bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none w-full" id="catalogSearchInput" placeholder="Filter by language, certification, tech stack..." type="text"/>
+<span class="font-label-code text-label-code text-outline uppercase bg-surface-container px-1.5 py-0.5 rounded">Search</span>
+</div>
+<div class="flex items-center justify-between w-full md:w-auto gap-space-lg">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-code text-label-code text-on-surface-variant">SORT BY:</span>
+<select class="bg-surface text-primary font-body-sm text-body-sm px-space-md py-space-xs rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-primary-container">
+<option selected="">Highest Placement Rate</option>
+<option>Next Cohort Date (Earliest)</option>
+<option>Duration: Shortest First</option>
+<option>Tuition: Low to High</option>
+</select>
+</div>
+<span class="font-label-code text-label-code text-secondary font-semibold hidden sm:inline-block">6 Cohorts Enrolling</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Intensive Bootcamp Spotlight Banner -->
+<section class="w-full max-w-[1280px] mx-auto px-gutter py-space-md">
+<div class="relative bg-gradient-to-r from-surface-container-high via-surface-container to-surface-container-low rounded-2xl overflow-hidden p-space-lg md:p-space-xl shadow-[0_8px_32px_-4px_rgba(0,240,255,0.18)]">
+<!-- Glow ambient accent inside card -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-primary-container/15 rounded-full blur-[80px] pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center relative z-10">
+<!-- Left: Flagship Info -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="font-label-badge text-label-badge bg-primary-container text-on-primary px-space-sm py-1 rounded-full font-bold shadow-[0_0_10px_rgba(0,240,255,0.4)]">
+              FLAGSHIP IMMERSIVE
+            </span>
+<span class="inline-flex items-center gap-1 font-label-badge text-label-badge bg-surface-bright text-tertiary px-space-sm py-1 rounded-full">
+<span class="material-symbols-outlined text-[14px]">sensors</span> LIVE DUAL-MENTOR ENGINE
+            </span>
+<span class="font-label-code text-label-code text-error bg-error-container/40 text-on-error-container px-space-sm py-1 rounded-full font-semibold">
+              Upcoming Cohort: Nov 15 (8 seats left)
+            </span>
+</div>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold">
+              Autonomous AI Systems &amp; Distributed Architecture Residency
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+              A grueling 26-week full-stack AI residency designed by Principal Staff Engineers from OpenAI and AWS. Engineer end-to-end multi-agent pipelines, fine-tuned foundational LLMs, and high-throughput vector storage backends.
+            </p>
+</div>
+<!-- Feature Bullets Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm py-space-xs">
+<div class="bg-surface-container-lowest p-space-sm rounded-lg">
+<span class="font-label-code text-label-code text-outline block">HOURS / WK</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">40 Hrs</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block text-xs">Immersive Full-Time</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg">
+<span class="font-label-code text-label-code text-outline block">PROD BENCHMARKS</span>
+<span class="font-headline-sm text-headline-sm text-primary-container font-bold">18 Labs</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block text-xs">Kubernetes + Ray</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg col-span-2 sm:col-span-1">
+<span class="font-label-code text-label-code text-outline block">INTERVIEW PASS</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">98.1%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block text-xs">Tier-1 Silicon Firms</span>
+</div>
+</div>
+<!-- CTAs & Actions -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-space-sm bg-primary-container text-on-primary font-body-sm text-body-sm font-bold px-space-lg py-space-sm rounded-lg shadow-[0_0_20px_rgba(0,240,255,0.4)] hover:bg-primary-fixed-dim transition-all" data-path="book-free-demo" href="#">
+<span>Secure Priority Seat</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<button class="inline-flex items-center gap-space-xs bg-surface-container-highest text-primary font-body-sm text-body-sm px-space-md py-space-sm rounded-lg hover:bg-surface-bright transition-colors shadow-sm" onclick="alert('Downloading Nexskill 2025 AI Systems Curriculum (PDF)...')" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Preview 38-Page Syllabus</span>
+</button>
+<span class="font-label-code text-label-code text-on-surface-variant">Includes 1-on-1 Portfolio Defense</span>
+</div>
+</div>
+<!-- Right: Real-time Terminal Inspection Visualizer -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-md shadow-2xl relative">
+<div class="flex items-center justify-between pb-space-xs bg-surface-container-lowest">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+</div>
+<span class="font-label-code text-label-code text-outline">sandbox::agent_runtime.py</span>
+<span class="font-label-code text-label-code text-secondary bg-surface-container px-2 py-0.5 rounded text-[10px]">LIVE REPL</span>
+</div>
+<pre class="font-label-code text-label-code text-on-surface-variant pt-space-sm overflow-x-auto leading-relaxed"><span class="text-secondary font-bold">import</span> ray
+<span class="text-secondary font-bold">from</span> vllm <span class="text-secondary font-bold">import</span> LLM, SamplingParams
+<span class="text-primary-container"># Cluster: 8x H100 SXM5 Distributed Node</span>
+ray.init(address=<span class="text-tertiary">"ray://cluster.nexskill.lab:10001"</span>)
+
+<span class="text-secondary font-bold">class</span> <span class="text-primary font-bold">AgentSwarmMesh</span>:
+    <span class="text-secondary font-bold">def</span> __init__(self, shards=<span class="text-primary-container">8</span>):
+        self.engine = LLM(model=<span class="text-tertiary">"meta-llama/Llama-3-70b-instruct"</span>,
+                          tensor_parallel_size=shards)
+        
+    <span class="text-secondary font-bold">async def</span> dispatch_task(self, query):
+        params = SamplingParams(temperature=<span class="text-primary-container">0.2</span>, top_p=<span class="text-primary-container">0.95</span>)
+        return await self.engine.generate_async(query, params)
+
+<span class="text-primary-container">[Nexskill Daemon]</span>: Sandbox provisioned in 1.4s. Memory allocated: 64GB VRAM.
+<span class="text-secondary">[Passed]</span> Test benchmark throughput: <span class="text-primary">1,420 tokens/sec</span></pre>
+<!-- Bottom interactive badge -->
+<div class="mt-space-sm pt-space-xs flex items-center justify-between bg-surface-container px-space-sm py-1.5 rounded-lg">
+<div class="flex items-center gap-space-xs">
+<img class="w-7 h-7 rounded-full object-cover shadow-sm" data-alt="High quality headshot of a technical faculty mentor with glasses and microphone in modern tech laboratory setup, soft cyan studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBriq5dmjF2yxuhYWMCOY0AqWCiqC8JtC6HlpLk73Pixk0TP_F9DWODVV5jLDXMeHkjDQ6LhXUs4id4X-BqpAONLeSDfoFBXKvhMcBVW9wjgmwDm6bN5TkuXWkjZVN-e6rTLnY4sty7B0-OSA7Ji8ofm0LR79EWVN-AnzYcVbc5EgU9BezELYonSxtiF1X7FqmpzXM5sRNY6vL2DP-w9_X4yQDSfyLheiDAXvDRr_O4O0IfmBYWxJdWfA"/>
+<div>
+<span class="font-body-sm text-body-sm text-primary font-semibold block text-xs">Dr. Marcus Vance</span>
+<span class="font-label-code text-label-code text-outline text-[10px]">Ex-DeepMind Research Lead</span>
+</div>
+</div>
+<span class="font-label-badge text-label-badge text-primary-container bg-surface-container-high px-2 py-0.5 rounded">DIRECTOR OF TRACK</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Comprehensive Program Grid -->
+<section class="w-full max-w-[1280px] mx-auto px-gutter py-space-xl">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm mb-space-lg">
+<div>
+<span class="font-label-badge text-label-badge text-secondary uppercase tracking-wider block">Career Acceleration Curriculum</span>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold">Select Your Engineering Specialization</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+        Every curriculum track features dedicated 1:1 career counseling, weekly algorithmic interview mock drills, and unthrottled access to our GPU workstation clusters.
+      </p>
+</div>
+<!-- Cards 3x2 Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Card 1: Full Stack MERN & Next.js -->
+<div class="flex flex-col justify-between bg-surface-container rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_8px_32px_-4px_rgba(0,240,255,0.25)] group">
+<div>
+<!-- Thumbnail & Media Layer -->
+<div class="relative h-48 w-full overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern web application architecture diagram glowing on dark glass screens with Next.js code editor and reactive UI elements in clean deep cyan and electric blue styling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfHJT89X8pIn2VT3S-qLnFFnsfua7bPtcXipAoq7FwRkO2YCYoJZmiyNi54aOKPlxCzMbvzh1Zq4dC2h9jHXXC89-dl5Pw3JgL2r3SjufRu6Jyt1BpqS9GAH0r3wK98OfkqswpMxhgtVRtlBbavomuPhRT_fev8YL4_StzE8u21RkmoMXUupgQ1tbxLUaZaZ0O9zCDquZyOBrD9T8RlDmXuGAg1l0xcSbGfc6mOqfawfvJZ5BrsTeazg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
+<div class="absolute top-3 left-3 flex items-center gap-space-xs">
+<span class="font-label-badge text-label-badge bg-surface-container-lowest/80 backdrop-blur-md text-primary-container px-2 py-1 rounded">24 WEEKS</span>
+<span class="font-label-badge text-label-badge bg-surface-container-lowest/80 backdrop-blur-md text-on-surface px-2 py-1 rounded">LIVE HYBRID</span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="font-label-badge text-label-badge bg-primary-container text-on-primary px-2.5 py-1 rounded-full font-bold shadow-[0_0_8px_rgba(0,240,255,0.4)]">
+                HIRING GUARANTEE
+              </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-1 font-label-code text-label-code text-primary bg-surface-container-high/90 backdrop-blur-sm px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">terminal</span> 12 Production Projects
+              </div>
+<div class="font-label-code text-label-code text-on-surface-variant bg-surface-container-high/90 backdrop-blur-sm px-2 py-0.5 rounded">
+                25 hrs / wk
+              </div>
+</div>
+</div>
+<!-- Body Info -->
+<div class="p-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-badge text-label-badge text-secondary bg-surface-container-high px-2 py-0.5 rounded">BEGINNER TO PRO</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded">TYPESCRIPT FIRST</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold group-hover:text-primary-container transition-colors">
+              Full Stack MERN &amp; Next.js Bootcamp
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+              Architect resilient micro-frontends, high-performance SSR portals, and scalable REST/GraphQL APIs with Node.js, MongoDB, Redis caching, and Docker deployments.
+            </p>
+<!-- Tech Badges -->
+<div class="flex flex-wrap gap-1.5 pt-space-xs">
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">Next.js 15</span>
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">TypeScript</span>
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">Node/Express</span>
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">MongoDB</span>
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">Redis</span>
+</div>
+</div>
+</div>
+<!-- Footer / Pricing & CTA -->
+<div class="p-space-lg pt-0 flex flex-col gap-space-sm bg-surface-container">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-code text-label-code text-outline block">TOTAL TUITION</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">$4,850</span>
+</div>
+<div class="text-right">
+<span class="font-label-code text-label-code text-primary-container font-semibold">0% INTEREST EMI</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block text-xs">from $404 / mo (12 mos)</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<button class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary bg-surface-container-high py-2 rounded-lg text-center font-semibold transition-colors" type="button">
+              View Syllabus
+            </button>
+<a class="font-body-sm text-body-sm text-on-primary bg-primary-container hover:bg-primary-fixed-dim py-2 rounded-lg text-center font-bold shadow-md transition-all" data-path="book-free-demo" href="#">
+              Apply Now
+            </a>
+</div>
+</div>
+</div>
+<!-- Card 2: Enterprise Cloud Architect & DevOps -->
+<div class="flex flex-col justify-between bg-surface-container rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_8px_32px_-4px_rgba(0,240,255,0.25)] group">
+<div>
+<div class="relative h-48 w-full overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High tech server room with illuminated cloud computing racks, Kubernetes hexagonal logos projected in electric cyan mist, network topology visual" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf36f4EcBuXyhEUXZFSgWNOH_joj3ajYcDKeYnE64Jz8FNfsQ7F1bFEBAbxpfE9VxvERcnu4Yb8aiUrdCASJHUkZmj8oZJ7ILs-02ObtyHSBTVLNRDHOcVK7SBorBqMw7vUn9EMu-vVwlks0gkQF3k_ijumGe3p5mhnThehBObp6rBUc-E-Kz9XlIxiP4Cx0c_Tb8QYagAc4BTUG5x5TlWilhey9RHLXWqi4gx275iJFltD3og-Rry7g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
+<div class="absolute top-3 left-3 flex items-center gap-space-xs">
+<span class="font-label-badge text-label-badge bg-surface-container-lowest/80 backdrop-blur-md text-primary-container px-2 py-1 rounded">18 WEEKS</span>
+<span class="font-label-badge text-label-badge bg-surface-container-lowest/80 backdrop-blur-md text-on-surface px-2 py-1 rounded">ONLINE BOOTCAMP</span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="font-label-badge text-label-badge bg-secondary text-on-secondary px-2.5 py-1 rounded-full font-bold">
+                AWS CERT PREP
+              </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-1 font-label-code text-label-code text-primary bg-surface-container-high/90 backdrop-blur-sm px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">deployed_code</span> 15 Cloud Deployments
+              </div>
+<div class="font-label-code text-label-code text-on-surface-variant bg-surface-container-high/90 backdrop-blur-sm px-2 py-0.5 rounded">
+                20 hrs / wk
+              </div>
+</div>
+</div>
+<div class="p-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-badge text-label-badge text-secondary bg-surface-container-high px-2 py-0.5 rounded">INTERMEDIATE</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded">IAC &amp; K8S</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold group-hover:text-primary-container transition-colors">
+              Enterprise Cloud Architect &amp; DevOps
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+              Master AWS &amp; Azure infrastructure orchestration, multi-cluster Kubernetes deployments, Terraform automation, zero-trust security policies, and GitLab CI/CD engines.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-space-xs">
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">AWS Solutions</span>
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">Kubernetes</span>
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">Terraform</span>
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">Prometheus</span>
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">Docker</span>
+</div>
+</div>
+</div>
+<div class="p-space-lg pt-0 flex flex-col gap-space-sm bg-surface-container">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-code text-label-code text-outline block">TOTAL TUITION</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">$4,200</span>
+</div>
+<div class="text-right">
+<span class="font-label-code text-label-code text-primary-container font-semibold">0% INTEREST EMI</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block text-xs">from $350 / mo (12 mos)</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<button class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary bg-surface-container-high py-2 rounded-lg text-center font-semibold transition-colors" type="button">
+              View Syllabus
+            </button>
+<a class="font-body-sm text-body-sm text-on-primary bg-primary-container hover:bg-primary-fixed-dim py-2 rounded-lg text-center font-bold shadow-md transition-all" data-path="book-free-demo" href="#">
+              Apply Now
+            </a>
+</div>
+</div>
+</div>
+<!-- Card 3: Applied Generative AI & Deep Learning -->
+<div class="flex flex-col justify-between bg-surface-container rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_8px_32px_-4px_rgba(0,240,255,0.25)] group">
+<div>
+<div class="relative h-48 w-full overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Neural network nodes glowing in cyan and teal light with tensor matrices and synthetic intelligence data models against a deep oceanic blue background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM8p0P0fVYKwp5QnNRi3y8qLoetTZAohjLSRyzPnZbKW2u4hWJDVUMnoGmmAf53BH_a65AbLP8GvQZLqqtBRlmfOlhnuI6bT9GzZaD2bFjn2nidLQtenzAhdmoJtqX-E7nDGx-0wtO3NOdZWY5_pUoEu9YmjSoA4vfD7bhHcNLU4BFvEUokRKDiki8zmkpCrXM9Ke4QKRUPK7Vw9amAiQiicyjkkfY6qBqb_d2KQdg4cLlZFhLgB57ag"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
+<div class="absolute top-3 left-3 flex items-center gap-space-xs">
+<span class="font-label-badge text-label-badge bg-surface-container-lowest/80 backdrop-blur-md text-primary-container px-2 py-1 rounded">20 WEEKS</span>
+<span class="font-label-badge text-label-badge bg-surface-container-lowest/80 backdrop-blur-md text-on-surface px-2 py-1 rounded">ACCELERATED</span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="font-label-badge text-label-badge bg-primary-container text-on-primary px-2.5 py-1 rounded-full font-bold shadow-[0_0_8px_rgba(0,240,255,0.4)]">
+                TOP RATED
+              </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-1 font-label-code text-label-code text-primary bg-surface-container-high/90 backdrop-blur-sm px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">psychology</span> 14 Neural Models
+              </div>
+<div class="font-label-code text-label-code text-on-surface-variant bg-surface-container-high/90 backdrop-blur-sm px-2 py-0.5 rounded">
+                22 hrs / wk
+              </div>
+</div>
+</div>
+<div class="p-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-badge text-label-badge text-secondary bg-surface-container-high px-2 py-0.5 rounded">ADVANCED TRACK</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded">GPU INCLUDED</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold group-hover:text-primary-container transition-colors">
+              Applied Generative AI &amp; Deep Learning
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+              Build cutting-edge enterprise RAG architectures, custom LoRA model fine-tuning routines, multi-modal agents with LangChain &amp; LlamaIndex, and high-speed PyTorch workflows.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-space-xs">
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">PyTorch</span>
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">LangChain</span>
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">HuggingFace</span>
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">Milvus</span>
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">LoRA / QLoRA</span>
+</div>
+</div>
+</div>
+<div class="p-space-lg pt-0 flex flex-col gap-space-sm bg-surface-container">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-code text-label-code text-outline block">TOTAL TUITION</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">$5,400</span>
+</div>
+<div class="text-right">
+<span class="font-label-code text-label-code text-primary-container font-semibold">0% INTEREST EMI</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block text-xs">from $450 / mo (12 mos)</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<button class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary bg-surface-container-high py-2 rounded-lg text-center font-semibold transition-colors" type="button">
+              View Syllabus
+            </button>
+<a class="font-body-sm text-body-sm text-on-primary bg-primary-container hover:bg-primary-fixed-dim py-2 rounded-lg text-center font-bold shadow-md transition-all" data-path="book-free-demo" href="#">
+              Apply Now
+            </a>
+</div>
+</div>
+</div>
+<!-- Card 4: Offensive Security & Ethical Hacking -->
+<div class="flex flex-col justify-between bg-surface-container rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_8px_32px_-4px_rgba(0,240,255,0.25)] group">
+<div>
+<div class="relative h-48 w-full overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Cybersecurity terminal interface displaying packet sniffer logs, cryptographic keys, vulnerability scanning metrics in high contrast dark navy and glowing cyan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBky_j1tqYpPGJLpqm2WeEpa9nHlgdpSrSzoTagciCZZd8NXj1Ys9dCca-WUeUeorQ1Kg0GvTBB3qdaDk8m5bkmQw7MaauhLdvPLCb09SinT6d8lwAkl72hJ-TBo3wpladHSSYoacNmvR4-kf2ZyD9WMIc_VIPzIhtkbJPFzeYpGlzz797HUjjVgLZxd_nj0p-4-gFfZ7Vb78RCf20kfWdpMYPAYIFy90EYpqlYanT67uC99VzeKDJhWg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
+<div class="absolute top-3 left-3 flex items-center gap-space-xs">
+<span class="font-label-badge text-label-badge bg-surface-container-lowest/80 backdrop-blur-md text-primary-container px-2 py-1 rounded">16 WEEKS</span>
+<span class="font-label-badge text-label-badge bg-surface-container-lowest/80 backdrop-blur-md text-on-surface px-2 py-1 rounded">HANDS-ON LABS</span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="font-label-badge text-label-badge bg-surface-container-highest text-secondary px-2.5 py-1 rounded-full font-bold">
+                CEH / CompTIA
+              </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-1 font-label-code text-label-code text-primary bg-surface-container-high/90 backdrop-blur-sm px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">security</span> 22 Live CTF Ranges
+              </div>
+<div class="font-label-code text-label-code text-on-surface-variant bg-surface-container-high/90 backdrop-blur-sm px-2 py-0.5 rounded">
+                18 hrs / wk
+              </div>
+</div>
+</div>
+<div class="p-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-badge text-label-badge text-secondary bg-surface-container-high px-2 py-0.5 rounded">INTERMEDIATE</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded">OFFENSIVE / DEFENSIVE</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold group-hover:text-primary-container transition-colors">
+              Offensive Security &amp; Ethical Hacking
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+              Master penetration testing methodologies, active defense forensics, web application exploit vectors (OWASP Top 10), and real-time incident remediation simulations.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-space-xs">
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">Kali Linux</span>
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">Metasploit</span>
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">Burp Suite Pro</span>
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">Wireshark</span>
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">SIEM/Splunk</span>
+</div>
+</div>
+</div>
+<div class="p-space-lg pt-0 flex flex-col gap-space-sm bg-surface-container">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-code text-label-code text-outline block">TOTAL TUITION</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">$3,950</span>
+</div>
+<div class="text-right">
+<span class="font-label-code text-label-code text-primary-container font-semibold">0% INTEREST EMI</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block text-xs">from $329 / mo (12 mos)</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<button class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary bg-surface-container-high py-2 rounded-lg text-center font-semibold transition-colors" type="button">
+              View Syllabus
+            </button>
+<a class="font-body-sm text-body-sm text-on-primary bg-primary-container hover:bg-primary-fixed-dim py-2 rounded-lg text-center font-bold shadow-md transition-all" data-path="book-free-demo" href="#">
+              Apply Now
+            </a>
+</div>
+</div>
+</div>
+<!-- Card 5: Modern Data Engineering & Snowflake -->
+<div class="flex flex-col justify-between bg-surface-container rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_8px_32px_-4px_rgba(0,240,255,0.25)] group">
+<div>
+<div class="relative h-48 w-full overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Data pipeline schema visualizer with streaming ETL nodes, data lakehouse diagrams, and analytical graphs highlighted in teal and cyber cyan on dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6VZUO4ahgG7F0UBucGckEIvBc_NZRiKUmyMHvY_0Ci8j8yteYiOi583FjJTChaecVTxVz3EQQPkFRga7XH6b7diselcip5C--HrHpX-pRPTAWy-vOLxcaR344adJ7FzpqzA8-5N-ZxNilSXPcfNSWPlvf0p14GdDttIJrZ8qzdLjAoz4dsRB29jyYAwgEfXTB1unNEArd7TwtQ1DKhSlgioO8GKuZEbxeLyoCYBXKouMsE-M9Yaxaxg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
+<div class="absolute top-3 left-3 flex items-center gap-space-xs">
+<span class="font-label-badge text-label-badge bg-surface-container-lowest/80 backdrop-blur-md text-primary-container px-2 py-1 rounded">16 WEEKS</span>
+<span class="font-label-badge text-label-badge bg-surface-container-lowest/80 backdrop-blur-md text-on-surface px-2 py-1 rounded">WEEKEND + LAB</span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="font-label-badge text-label-badge bg-primary-container text-on-primary px-2.5 py-1 rounded-full font-bold shadow-[0_0_8px_rgba(0,240,255,0.4)]">
+                HIRING GUARANTEE
+              </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-1 font-label-code text-label-code text-primary bg-surface-container-high/90 backdrop-blur-sm px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">dataset</span> 10 Big Data Pipelines
+              </div>
+<div class="font-label-code text-label-code text-on-surface-variant bg-surface-container-high/90 backdrop-blur-sm px-2 py-0.5 rounded">
+                16 hrs / wk
+              </div>
+</div>
+</div>
+<div class="p-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-badge text-label-badge text-secondary bg-surface-container-high px-2 py-0.5 rounded">ALL LEVELS</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded">WAREHOUSING</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold group-hover:text-primary-container transition-colors">
+              Modern Data Engineering &amp; Snowflake
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+              Transform high-velocity data streams into enterprise analytics. Implement production PySpark batches, DBT transformation layers, Apache Kafka message buses, and Snowflake Lakehouses.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-space-xs">
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">Snowflake</span>
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">Apache Spark</span>
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">dbt Core</span>
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">Airflow</span>
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">Kafka</span>
+</div>
+</div>
+</div>
+<div class="p-space-lg pt-0 flex flex-col gap-space-sm bg-surface-container">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-code text-label-code text-outline block">TOTAL TUITION</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">$4,400</span>
+</div>
+<div class="text-right">
+<span class="font-label-code text-label-code text-primary-container font-semibold">0% INTEREST EMI</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block text-xs">from $366 / mo (12 mos)</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<button class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary bg-surface-container-high py-2 rounded-lg text-center font-semibold transition-colors" type="button">
+              View Syllabus
+            </button>
+<a class="font-body-sm text-body-sm text-on-primary bg-primary-container hover:bg-primary-fixed-dim py-2 rounded-lg text-center font-bold shadow-md transition-all" data-path="book-free-demo" href="#">
+              Apply Now
+            </a>
+</div>
+</div>
+</div>
+<!-- Card 6: Mobile Engineering with Flutter & React Native -->
+<div class="flex flex-col justify-between bg-surface-container rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_8px_32px_-4px_rgba(0,240,255,0.25)] group">
+<div>
+<div class="relative h-48 w-full overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Multiple mobile smartphones showcasing polished iOS and Android responsive user interfaces with glowing code overlays in clean dark cyan palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMzKdF77sWP2Bc0QWRd0zof7-vNmY1DWElxNGS1k0i2QiP0qzM0EXC3EKqey3iT0iSlsdI3e2Va5wDM083z1Aze2EObaZAbKrocxLc2MIzBOoQQimwuuNKh6wmu-VGPU0lHYQGRlSy6MFORewj9Cs2DGGG-El4_dpElwkxPBbxbjpNjba3mIWJVpCzLIefOvM8z8aDcp0gRI7r2T3kWBsGOnCmgjMsmNcz8yhaM6BKbW-oxWXiAfkxsw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
+<div class="absolute top-3 left-3 flex items-center gap-space-xs">
+<span class="font-label-badge text-label-badge bg-surface-container-lowest/80 backdrop-blur-md text-primary-container px-2 py-1 rounded">14 WEEKS</span>
+<span class="font-label-badge text-label-badge bg-surface-container-lowest/80 backdrop-blur-md text-on-surface px-2 py-1 rounded">CROSS PLATFORM</span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="font-label-badge text-label-badge bg-surface-container-highest text-secondary px-2.5 py-1 rounded-full font-bold">
+                APP STORE READY
+              </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-1 font-label-code text-label-code text-primary bg-surface-container-high/90 backdrop-blur-sm px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">phone_iphone</span> 8 Shipped Apps
+              </div>
+<div class="font-label-code text-label-code text-on-surface-variant bg-surface-container-high/90 backdrop-blur-sm px-2 py-0.5 rounded">
+                15 hrs / wk
+              </div>
+</div>
+</div>
+<div class="p-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-badge text-label-badge text-secondary bg-surface-container-high px-2 py-0.5 rounded">FOUNDATIONAL</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded">MOBILE UX</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold group-hover:text-primary-container transition-colors">
+              Mobile Engineering with Flutter &amp; React Native
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+              Ship commercial native mobile applications to the Apple App Store and Google Play. Learn declarative UI design, state management with Bloc and Redux, offline-first sync, and biometric authentication.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-space-xs">
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">Flutter / Dart</span>
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">React Native</span>
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">Expo</span>
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">GraphQL</span>
+<span class="font-label-code text-label-code text-outline bg-surface-container-lowest px-2 py-0.5 rounded">Fastlane</span>
+</div>
+</div>
+</div>
+<div class="p-space-lg pt-0 flex flex-col gap-space-sm bg-surface-container">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-code text-label-code text-outline block">TOTAL TUITION</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">$3,600</span>
+</div>
+<div class="text-right">
+<span class="font-label-code text-label-code text-primary-container font-semibold">0% INTEREST EMI</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block text-xs">from $300 / mo (12 mos)</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<button class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary bg-surface-container-high py-2 rounded-lg text-center font-semibold transition-colors" type="button">
+              View Syllabus
+            </button>
+<a class="font-body-sm text-body-sm text-on-primary bg-primary-container hover:bg-primary-fixed-dim py-2 rounded-lg text-center font-bold shadow-md transition-all" data-path="book-free-demo" href="#">
+              Apply Now
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Learning Experience & Labs Breakdown -->
+<section class="w-full max-w-[1280px] mx-auto px-gutter py-space-xl">
+<div class="bg-surface-container-low rounded-2xl p-space-lg md:p-space-xl shadow-xl">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-space-xl">
+<div class="max-w-2xl">
+<span class="font-label-badge text-label-badge text-primary-container uppercase tracking-widest block">Pedagogical Benchmark</span>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold mt-1">
+            Why Nexskill Outperforms Traditional Education
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+            We decommissioned the passive lecture hall model. Our engineers spend 82% of total hours shipping code, architecting fault tolerance, and conducting peer reviews inside sandboxed environments.
+          </p>
+</div>
+<!-- Metric comparison badge -->
+<div class="flex items-center gap-space-sm bg-surface-container px-space-md py-space-sm rounded-xl">
+<span class="material-symbols-outlined text-primary-container text-[28px]">verified</span>
+<div>
+<span class="font-label-code text-label-code text-on-surface font-bold block">100% PRODUCTION LAB CODE</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-xs">Zero multiple choice exams. Real commit history.</span>
+</div>
+</div>
+</div>
+<!-- Comparison Matrix Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-high/60">
+<th class="p-space-md font-label-code text-label-code text-outline uppercase tracking-wider rounded-l-lg">Dimension</th>
+<th class="p-space-md font-headline-sm text-headline-sm text-primary font-bold bg-primary-container/10">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container shadow-[0_0_8px_#00f0ff]"></span>
+                  Nexskill Accelerator
+                </div>
+</th>
+<th class="p-space-md font-body-sm text-body-sm text-on-surface-variant font-semibold">Traditional CS Degree</th>
+<th class="p-space-md font-body-sm text-body-sm text-on-surface-variant font-semibold rounded-r-lg">Generic Pre-Recorded Mooc</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="p-space-md font-body-sm text-body-sm text-primary font-medium">Curriculum Currency</td>
+<td class="p-space-md font-body-sm text-body-sm text-primary-container font-semibold bg-primary-container/5">
+                Updated quarterly with Big Tech VP/Staff input
+              </td>
+<td class="p-space-md font-body-sm text-body-sm text-on-surface-variant">5–10 year accreditation cycle</td>
+<td class="p-space-md font-body-sm text-body-sm text-outline">Static 2-4 year old recordings</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="p-space-md font-body-sm text-body-sm text-primary font-medium">Hands-on Laboratory Time</td>
+<td class="p-space-md font-body-sm text-body-sm text-primary-container font-semibold bg-primary-container/5">
+                82% (Live IDE, Cloud Sandbox, PR Reviews)
+              </td>
+<td class="p-space-md font-body-sm text-body-sm text-on-surface-variant">15–20% (Academic chalk labs)</td>
+<td class="p-space-md font-body-sm text-body-sm text-outline">0% (Self-hosted video only)</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="p-space-md font-body-sm text-body-sm text-primary font-medium">Instruction Staff</td>
+<td class="p-space-md font-body-sm text-body-sm text-primary-container font-semibold bg-primary-container/5">
+                Active Staff/Principal Tech Engineers
+              </td>
+<td class="p-space-md font-body-sm text-body-sm text-on-surface-variant">Tenured theoretical professors</td>
+<td class="p-space-md font-body-sm text-body-sm text-outline">Automated video avatars / No support</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="p-space-md font-body-sm text-body-sm text-primary font-medium">Career Sourcing &amp; Placement</td>
+<td class="p-space-md font-body-sm text-body-sm text-primary-container font-semibold bg-primary-container/5">
+                Direct hiring pipelines + 100% money-back clause
+              </td>
+<td class="p-space-md font-body-sm text-body-sm text-on-surface-variant">Unmonitored generic job fairs</td>
+<td class="p-space-md font-body-sm text-body-sm text-outline">None / Autonomous certificate</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="p-space-md font-body-sm text-body-sm text-primary font-medium">Time-To-Job Readiness</td>
+<td class="p-space-md font-body-sm text-body-sm text-primary-container font-semibold bg-primary-container/5">
+                14 – 26 Weeks
+              </td>
+<td class="p-space-md font-body-sm text-body-sm text-on-surface-variant">4 Years (208 Weeks)</td>
+<td class="p-space-md font-body-sm text-body-sm text-outline">Indefinite (High drop-out rate)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Interactive FAQ Accordion Section -->
+<section class="w-full max-w-[1280px] mx-auto px-gutter py-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Left side header & direct contact -->
+<div class="lg:col-span-4 flex flex-col justify-between">
+<div>
+<span class="font-label-badge text-label-badge text-secondary uppercase tracking-widest block">Admissions Clarity</span>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold mt-1">Frequently Asked Inquiries</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+            Everything you need to know regarding admissions screening, hardware prerequisites, remote lab orchestration, and income share agreements.
+          </p>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl shadow-md mt-space-lg lg:mt-0">
+<span class="font-label-code text-label-code text-primary-container block mb-1">STILL HAVE QUESTIONS?</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            Schedule a 20-minute 1:1 call with a technical admissions dean to evaluate your background readiness.
+          </p>
+<a class="inline-flex items-center justify-center w-full font-body-sm text-body-sm font-bold bg-surface-container-high text-primary hover:bg-surface-bright py-space-sm rounded-lg transition-colors shadow-sm" data-path="book-free-demo" href="#">
+            Book Dean Consultation
+          </a>
+</div>
+</div>
+<!-- Right side accordion list -->
+<div class="lg:col-span-8 flex flex-col gap-space-sm" id="catalogFaqContainer">
+<!-- FAQ Item 1 -->
+<div class="faq-item bg-surface-container rounded-xl overflow-hidden transition-all shadow-sm">
+<button class="faq-trigger w-full px-space-lg py-space-md flex items-center justify-between text-left focus:outline-none" type="button">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">What are the live classroom formats and scheduling commitments?</span>
+<span class="material-symbols-outlined faq-icon text-primary transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content px-space-lg pb-space-md text-on-surface-variant font-body-md text-body-md">
+            All programs are structured in two tracks: Immersive Full-Time (Monday–Friday, 9:00 AM – 5:00 PM EST) and Professional Flex-Time (Tuesday &amp; Thursday evenings, plus intensive Saturday laboratory builds). Both tracks require attendance at live pair-programming sessions and code reviews; replays and terminal recordings are archived within 30 minutes of session close.
+          </div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="faq-item bg-surface-container rounded-xl overflow-hidden transition-all shadow-sm">
+<button class="faq-trigger w-full px-space-lg py-space-md flex items-center justify-between text-left focus:outline-none" type="button">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">How does the 0% Interest Tuition Financing &amp; Placement Guarantee work?</span>
+<span class="material-symbols-outlined faq-icon text-primary transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-md text-on-surface-variant font-body-md text-body-md">
+            Nexskill partners with regulated educational lenders to provide 0% APR installment payment plans split across 6 to 18 monthly tranches with zero upfront penalty fees. Our Money-Back Guarantee applies to full-time and eligible hybrid tracks: if you fulfill our career cell milestones and do not receive a qualifying technical job offer within 180 days of graduation, your net tuition is refunded in full.
+          </div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="faq-item bg-surface-container rounded-xl overflow-hidden transition-all shadow-sm">
+<button class="faq-trigger w-full px-space-lg py-space-md flex items-center justify-between text-left focus:outline-none" type="button">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">What hardware or laptop configuration is needed for the labs?</span>
+<span class="material-symbols-outlined faq-icon text-primary transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-md text-on-surface-variant font-body-md text-body-md">
+            Any modern machine (macOS, Linux, or Windows 11 with WSL2 enabled) equipped with at least 16GB RAM and a multi-core CPU is sufficient. For GPU-intensive tracks like Applied Generative AI and Big Data Lakehouses, all high-compute model training is provisioned directly via Nexskill Cloud Shell clusters—eliminating the need for expensive local workstation hardware.
+          </div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="faq-item bg-surface-container rounded-xl overflow-hidden transition-all shadow-sm">
+<button class="faq-trigger w-full px-space-lg py-space-md flex items-center justify-between text-left focus:outline-none" type="button">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">Can I reserve a seat now and defer to a later cohort date?</span>
+<span class="material-symbols-outlined faq-icon text-primary transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-md text-on-surface-variant font-body-md text-body-md">
+            Yes. Admitted students may lock in their current tuition pricing and reserve a guaranteed slot for up to two upcoming consecutive cohorts (up to 120 days). Simply notify your assigned admissions advisor after receiving your acceptance letter to defer smoothly without any re-application fee.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Client Behavior Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Filter Pills Selection Micro-interaction
+      const pills = document.querySelectorAll('#filterPillsContainer .filter-pill');
+      pills.forEach(pill => {
+        pill.addEventListener('click', function () {
+          pills.forEach(p => {
+            p.classList.remove('bg-primary-container', 'text-on-primary', 'font-bold', 'shadow-[0_0_12px_rgba(0,240,255,0.35)]');
+            p.classList.add('bg-surface-container', 'text-on-surface-variant');
+          });
+          this.classList.remove('bg-surface-container', 'text-on-surface-variant');
+          this.classList.add('bg-primary-container', 'text-on-primary', 'font-bold', 'shadow-[0_0_12px_rgba(0,240,255,0.35)]');
+        });
+      });
+
+      // FAQ Accordion Toggle Interaction
+      const faqItems = document.querySelectorAll('#catalogFaqContainer .faq-item');
+      faqItems.forEach(item => {
+        const trigger = item.querySelector('.faq-trigger');
+        const content = item.querySelector('.faq-content');
+        const icon = item.querySelector('.faq-icon');
+
+        trigger.addEventListener('click', () => {
+          const isCurrentlyHidden = content.classList.contains('hidden');
+          
+          // Close all items
+          faqItems.forEach(otherItem => {
+            const otherContent = otherItem.querySelector('.faq-content');
+            const otherIcon = otherItem.querySelector('.faq-icon');
+            if (otherContent) otherContent.classList.add('hidden');
+            if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+          });
+
+          // Toggle current
+          if (isCurrentlyHidden) {
+            content.classList.remove('hidden');
+            icon.style.transform = 'rotate(180deg)';
+          }
+        });
+      });
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest mt-space-xl"><div class="max-w-[1280px] mx-auto px-gutter py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl mb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Nexskill Brand Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WPqFhlZSd5bFpqDtDHGPeIEri5QfFjNA4T_4JjLyjmcanKJL1i3dbkz5MlihBDyHy_Nefk5dhiYthX7v-35qyfmKzv-zZd5S0ZZx6Tz1hjrGm8sAwokxs_yHEBoROpgQL6ThL5_Np1VsqOvObJIlbY4xpATkXakCDoLZYzrKJt07-ZAewQMmf6xVLD37HRO26yo31vF4m2joL8kDyLECjPQ82JpNPP4UOfrv9HlyMJxrvNHauDx25jo3oy"/><span class="font-headline-sm text-headline-sm text-primary">Nexskill</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">Premier technical workforce accelerator engineered for modern industry scale. Rigorous hands-on bootcamps powering the next generation of software engineers, cloud architects, and AI pioneers.</p><div class="flex flex-wrap items-center gap-space-xs"><span class="font-label-badge text-label-badge text-secondary bg-surface-container px-space-sm py-1 rounded-full">ISO 9001:2015</span><span class="font-label-badge text-label-badge text-secondary bg-surface-container px-space-sm py-1 rounded-full">AWS ACADEMY</span><span class="font-label-badge text-label-badge text-secondary bg-surface-container px-space-sm py-1 rounded-full">LINUX FOUNDATION</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-badge text-label-badge text-primary uppercase tracking-wider mb-space-xs">Curriculum Tracks</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="courses-and-bootcamps" href="#">Full Stack Web Development</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="courses-and-bootcamps" href="#">Cloud &amp; DevOps Architecture</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="courses-and-bootcamps" href="#">Data Science &amp; AI Systems</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="courses-and-bootcamps" href="#">Cybersecurity Engineering</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-badge text-label-badge text-primary uppercase tracking-wider mb-space-xs">Student Support</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="admissions-and-placements" href="#">Career &amp; Placement Cell</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="admissions-and-placements" href="#">Scholarship Programs</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="student-portal" href="#">Terminal &amp; Lab Access</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="student-portal" href="#">Mentor Office Hours</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-badge text-label-badge text-primary uppercase tracking-wider mb-space-xs">Campus &amp; Contact</span><p class="font-body-sm text-body-sm text-on-surface-variant">Tech Nexus Tower, Level 4<br/>Innovation Corridor, Sector 5<br/>Cyber City, IN 560001</p><p class="font-label-code text-label-code text-secondary">admissions@nexskill.edu<br/>+1 (800) 492-7545</p></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container-lowest"><span class="font-label-code text-label-code text-outline">© 2025 Nexskill Institute of Applied Technology. All rights reserved.</span><div class="flex items-center gap-space-lg font-body-sm text-body-sm text-outline"><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" href="#">Terms of Enrollment</a><a class="hover:text-on-surface transition-colors" href="#">System Status</a></div></div></div></footer></body></html>
